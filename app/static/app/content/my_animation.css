@@ -1,0 +1,20 @@
+.innact_anim .fadeInUp{
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s ease 0.1s;
+}
+.act_anim .fadeInUp{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1s ease 0.1s;
+}
+.innact_anim .fadeInLeft{
+    transform: translate(-50%, 0px);
+    opacity: 0;
+    transition: all 1.5s ease-out 0.1s;
+}
+.act_anim .fadeInLeft{
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: all 1.5s ease-out 0.1s;
+}

@@ -1,0 +1,47 @@
+{% extends "app/layout.html" %}
+{% block content %}
+    <head>
+        <meta charset="utf-8">
+        <title>Surgutov Mihail - Personal Portfolio Template</title>
+    </head>
+		
+<!-- Latest Works -->
+<section id="latest-works" class="latest-works section">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="section-title">
+					<h2>My <span>Portfolio</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<!-- Project Nav -->
+				<div class="works-menu wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<ul>
+						<li class="active" data-filter="*"><i class="fa fa-tasks"></i>All Works</li>
+						<li data-filter=".print"><i class="fa fa-laptop"></i>WEB DEVELOPMENT</li>
+						<li data-filter=".identity"><i class="fa fa-mobile"></i>App Development</li>
+					</ul>
+				</div>
+				<!--/ End Project Nav -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<div class = "portfolio_img_space">
+					{% load static %}<img src="{% static 'app\content\img\my site.png' %}" alt="Изображение работы 1">
+                </div>
+			</div>
+			<div class="col-md-7">
+				<h4><a href=pfpage/pfEl1.html><span>Собственный сайт партфолио</span></a></h4>
+				<hr/>
+				<p>Первый собственный сайт!</p>
+			</div>
+		</div>
+        
+    </div>
+</section>
+<!-- End Latest Works -->
+{% endblock %}

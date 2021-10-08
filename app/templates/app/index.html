@@ -1,0 +1,295 @@
+{% extends "app/layout.html" %}
+{% block content %}
+    <head>
+        <meta charset="utf-8">
+        <title>Surgutov Mihail - Personal Portfolio Template</title>
+    </head>
+
+<!-- Slider Area -->
+<section id="slider">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-7 col-sm-12 col-xs-12">
+				<div class="_anim_items text innact_anim">
+					<h1 class="fadeInLeft">Hi,my name is Mihail Surgutov</h1>
+					<p class="fadeInUp">I'm currently studying at the Togliatti College of Economics and Technology as a programmer.</p>
+					<div class="button">
+						<a href="portfolio_p.html" class="btn primary "><i class="fa fa-briefcase"></i>View work</a>
+						<a href="#" class="btn"><i class="fa fa-phone"></i>Contact me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Slider Area -->
+<!-- Start about -->
+<section id="about">
+	<div class="container-fluid">
+		<div class="row about-content">
+			<div class="col-md-2 col-sm-2">
+				<div class="_anim_items section-title">
+					<h2 class="fadeInLeft">About <span class="fadeInLeft">Me</span></h2>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<div class="_anim_items single-about">
+					<p class="bolt fadeInUp">
+					I am a 4th year student. Despite the fact that my college did not teach the programming language "python", I still write programs in it and study it.
+				    </p>
+                </div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="image">
+					{% load static %}<img src="{% static 'app/content/img/about.jpg'%}" alt="#">
+					<a href="https://www.youtube.com/watch?v=sIS8le9n9MY" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End about -->	
+		
+<!-- Start service -->
+<section id="service">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="_anim_items section-title">
+					<h2 class="fadeInLeft">My <span class="fadeInLeft">Service</span></h2>
+				</div> 
+			</div>
+			<div class="col-md-8 col-sm-12 col-xs-12">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<!-- single-service -->	
+						<div class="_anim_items single-service">
+							<i class="fa fa-laptop"></i>
+							<h5 class="fadeInUp">Web Development</h5>
+							<p class="fadeInUp">I have basic skills in web programming. I can write blocky and multi-page websites.</p>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12 _anim_items">
+						<!-- single-service -->	
+						<div class="single-service">
+							<i class="fa fa-mobile"></i>
+							<h5 class="fadeInUp">App Development</h5>
+							<p class="fadeInUp">I have a little experience in software development in Python and C#.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End service -->	
+
+<!-- Start skill -->
+<section id="skill">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-sm-12 col-xs-12">
+				<div class="section-title _anim_items">
+					<h2 class="fadeInLeft">My <span class="fadeInLeft">Skill</span></h2>
+				</div>
+			</div>
+			<div class="col-md-10 col-sm-12 col-xs-12">
+				<div class="skill-head">
+					<div class="row">
+						<div class="col-md-6 col-sm-12 col-xs-12">
+							<div class="skill-content _anim_items">
+								<h3 class="fadeInUp">WHAT YOU NEED TO KNOW</h3>
+								<p class="fadeInUp">I'm just starting my career, so now I have little knowledge and experience in programming.</p>
+								<p class="fadeInUp">But I'm not upset, because this is just the beginning of my career as a programmer.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12 col-xs-12">
+							<div class="skill-main">
+								<div class="single-skill">
+									<div class="skill-title">
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>HTML & CSS3</h4>
+											</div>
+											<div class="progress">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" data-percent="90" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+													<span>90%</span>
+												</div>
+											</div>
+										</div>
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Python</h4>
+											</div>
+											<div class="progress">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" data-percent="70" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+													<span>70%</span>
+												</div>
+											</div>
+										</div>
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Django</h4>
+											</div>
+											<div class="progress">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" data-percent="65" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+													<span>65%</span>
+												</div>
+											</div>
+										</div>
+                                        <div class="single-skill">
+											<div class="skill-title">
+												<h4>Jquery</h4>
+											</div>
+											<div class="progress">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" data-percent="40" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+													<span>40%</span>
+												</div>
+											</div>
+										</div>
+                                        <div class="single-skill">
+											<div class="skill-title">
+												<h4>SQL-T</h4>
+											</div>
+											<div class="progress">
+												<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" data-percent="50" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+													<span>50%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End skill -->	
+		
+<!-- Start Story -->
+<section id="story">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="section-title _anim_items">
+					<h2 class="fadeInLeft">my <span>Story</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+				<div class="story-content">
+					<!-- single-story -->
+					<div class="single-story _anim_items">
+						<span class="year fadeInUp" >2015</span>
+						<div class="inner-content fadeInUp">
+							<h3>Getting secondary education</h3>
+							<p>All</p>
+							<p class="p2">This year I passed the Basic State Exam.</p>
+						</div>
+					</div>
+					<!-- single-story -->
+					<div class="single-story _anim_items">
+						<span class="year fadeInUp">2016</span>
+						<div class="inner-content fadeInUp">
+							<h3>Going to college</h3>
+							<p>All</p>
+							<p class="p2"></p>
+						</div>
+					</div>
+					<!-- single-story
+					<div class="single-story">
+						<span class="year wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.8s">2018</span>
+						<div class="inner-content wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
+							<h3>Ministersoft Studio</h3>
+							<p>Lead Web Designer</p>
+							<p class="p2">This was the time when we started our company. We had no idea how far we would go, we werenâ€™t even sure that we would be able to survive for a few years. What drove us to start the company was the understanding that we could provide a service no one else was providing.</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End story -->	
+		
+<!-- Latest Works -->
+<section id="latest-works">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="section-title _anim_items">
+					<h2 class="fadeInLeft">My <span>Portfolio</span></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<!-- Project Nav -->
+				<div class="works-menu wow animated fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+					<div class="cv">
+					<a href={% url 'portfolio' %}>View More</a>
+					</div>
+				</div>
+				<!--/ End Project Nav -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="isotop-active">
+				<div class="col-md-4 col-sm-4 col-xs-12 print identity">
+					<!-- single-work -->
+					<div class="single-work">
+						<img src="{% static 'app/content/img/my site.png' %}" alt="#">
+						<div class="works-hover">
+							<h4><a href="pf-2colum.html">WEB DEVELOPMENT</a></h4>
+							<div class="link"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--/ End Works -->
+
+<!-- Contact -->
+<section id="contact">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="contact-info">
+					<h4>Contact info</h4>
+					<p></p>
+					<p></p>
+					<span><i class="fa fa-phone-square"></i>+7 917 147 84 56</span>
+					<span><i class="fa fa-envelope"></i><a href="#">MiSStartP@gmail.com</a></span>
+					<span><i class="fa fa-globe"></i><a href="#">???</a></span>
+				</div>
+			</div>
+			<div class="col-md-9 col-sm-12 col-xs-12 form-body">
+				<div class="form-head">
+					<form class="form" action="#">
+						<div class="form-group">
+							<input name="name" type="text" placeholder="enter name">
+						</div>
+						<div class="form-group">
+							<input name="email" type="email" placeholder="enter email">
+						</div>
+						<div class="form-group">
+							<textarea name="message" placeholder="enter message"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="button">
+								<button type="submit" class="btn primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,970 @@
+/* =====================================
+Template Name: Tromas
+Author Name: Codeglim
+Description: Tromas is a Multipurpose Business HTML5 Theme. It's Perfect for any business websites. You can customize every section as your need.
+Version:	1.1
+========================================*/   
+/*======================================
+[ CSS Table of contents ]
+* Header CSS
+* Slider CSS
+* About CSS
+* Service CSS
+* Skill CSS
+* Story CSS
+* Portfolio CSS
+* Blog CSS
+* Newsletter CSS
+* Contact CSS
+* Clients CSS
+* Footer CSS
+========================================*/ 
+
+/* body */
+body{
+    font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	font-size:14px;
+	color:#363636;
+	position:relative;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:400;
+}
+a,button{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+	outline:none;
+	box-shadow:none;
+	text-decoration:none;
+}
+
+/* Text selection background-color */
+::-moz-selection {
+    background-color: var(--bs-cyan);
+    color: #fff;
+}
+ 
+::selection {
+    background-color: var(--bs-cyan);
+    color: #fff;
+}
+::-moz-selection,
+::selection {
+    background-color: var(--bs-cyan);
+    color: #fff;
+}
+section {
+	padding: 50px 0;
+}
+/* button */
+a:hover{
+	text-decoration:none;
+}
+
+.button .btn {
+	font-weight: 500;
+	font-size: 15px;
+	height: 40px;
+	color: #fff;
+	display: inline-block;
+	line-height: 40px;
+	padding: 0 30px 0 30px;
+}
+
+/*section-title*/
+.section-title {
+	text-align: center;
+}
+.section-title h2 {
+	color:#000;
+	font-size: 44px;
+	text-transform: uppercase;
+	position: relative;
+	font-weight: 700;
+}
+span {
+	color: var(--bs-cyan);
+}
+/*breadcrumb*/
+.breadcrumb{
+	padding:80px 0px 0px 0px ;
+	margin:0;
+	background-color:#fff;
+	border-top:1px solid #0000001a;
+	border-bottom:1px solid #0000001a;
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:relative;
+}
+.breadcrumb .breadcrumb-text {
+	float: right;
+}
+.breadcrumb .breadcrumb-text h2{
+	color:var(--bs-cyan);
+	text-transform:capitalize;
+	padding-bottom:10px;
+	border-bottom:5px solid var(--bs-cyan);
+}
+
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: var(--bs-cyan);
+	color: #fff;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	padding: 0;
+	border-radius: 100%;
+}
+#scrollUp:hover{
+	background:#333;
+}
+
+/*=========================
+	Nav CSS
+===========================*/
+.navbar {
+	background: linear-gradient(-154deg,#42a5bc,#3d7789);
+}
+.navbar-nav li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.navbar-nav li a {
+	color: #d5d5d5;
+	font-size: 14px;
+	font-weight: 300;
+	text-transform:uppercase;
+}
+#navbarNav li:hover a,
+#navbarNav li.active a{
+	color:#fff;
+}
+#navbarNav li:hover a{
+	color:#fff;
+}
+.form-group {
+	text-align: center;
+}
+/*=========================
+	End Header CSS
+===========================*/
+
+/*=========================
+	Slider CSS
+===========================*/
+#slider{
+	background-image: url("img/slider.jpg");
+	position:relative;
+}
+#slider div {
+	z-index: 1;
+}
+
+#slider:before{
+	position:absolute;
+	left:0;
+	top:0;
+	content:"";
+	height:100%;
+	width:100%;
+	background:#000;
+	opacity:0.4;
+}
+#slider{
+	height:680px;
+	background-size:cover;
+	background-position:center;
+}
+#slider .text {
+	margin-top: 5rem;
+}
+#slider h1 {
+	color: #fff;
+	font-size: 60px;
+	font-weight: 400;
+	margin: 0 0 30px;
+}
+#slider p{
+	color:#fff;
+}
+#slider .button{
+	margin-top:30px;
+}
+#slider .button .btn{
+	margin-right:10px;
+	background:#fff;
+	color:#333;
+	border-radius:0px;
+}
+#slider .button .btn:last-child{
+	margin-right:0px;
+}
+#slider .button .btn i{
+	margin-right:7px;
+}
+#slider .button .btn:hover{
+	color:#fff;
+	background:var(--bs-cyan);
+}
+#slider .button .primary{
+	background:var(--bs-cyan);
+	color:#fff;
+}
+#slider .button .primary:hover{
+	color:#333;
+	background:#fff;
+}
+/*=========================
+	End Slider CSS
+===========================*/
+
+/*=========================
+	About CSS
+===========================*/
+#about{
+	padding-top:100px;
+	padding-bottom:100px;
+}
+#about .single-about p{
+	margin-bottom: 25px;
+	font-size:15px;
+	font-weight:300;
+}
+#about .section-title{
+	margin-top:127px;
+}
+#about .single-about .social{
+	margin-top: 20px;
+}
+#about .single-about .social li{
+	display:inline-block;
+	margin-right:10px;
+}
+#about .single-about .social li:last-child{
+	margin-right:0px;
+}
+#about .single-about .social li a{
+	text-align:center;
+}
+#about .single-about .social li a i {
+	font-size: 20px;
+	color: #fff;
+	background: var(--bs-cyan);
+	font-size: 17px;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	border-radius: 0px;
+	
+}
+#about .single-about .social li a:hover i{
+	color:#fff;
+	background:#333;
+}
+#about .image{
+	position:relative;
+}
+#about .image img {
+	width: 100%;
+	box-shadow: 2px 2px 10px #0000002e;
+}
+.portfolio_img_space img{
+	max-width:100%;
+	height:auto;
+}
+hr {
+	margin-top: 8px;
+	background-color: var(--bs-cyan);
+	color: var(--bs-cyan);
+	margin-bottom: 10px;
+	height: 2px;
+}
+#about .image .video-popup {
+	color: #fff;
+	background: rgba(66, 127, 188, 0.6);
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 0px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -30px;
+	margin-top: -30px;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 100%;
+	padding-left: 3px;
+	padding-top: 1px;
+}
+#about .image .video-popup:hover{
+	transform:scale(1.1);
+	color:#fff;
+	background:#3339;
+}
+/*=========================
+	End About CSS
+===========================*/
+
+/*=========================
+	Services CSS
+===========================*/
+#service {
+	background: linear-gradient(-154deg,#42b1bcfc,#304c5a);
+	padding: 40px 0 100px;
+}
+#service .section-title {
+	margin-top: 100px;
+}
+#service .section-title span{
+	color:#fff;
+}
+#service .single-service {
+	position: relative;
+	margin-top: 60px;
+	padding-left: 75px;
+}
+#service .single-service i {
+	font-size: 30px;
+	color: #ffffffb3;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-right: 2px solid #fff;
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+	text-align: center;
+	border-radius: 50%;
+}
+#service .single-service:hover i{
+	color:#fff;
+}
+#service .single-service h5{
+	font-size:20px;
+	color:#fff;
+	margin-bottom:10px;
+	text-transform:capitalize;
+}
+#service .single-service p{
+	color:#fffc;
+	font-size:15px;
+	font-weight:300;
+}
+/*=========================
+	End Services CSS
+===========================*/
+
+/*=========================
+	Skills CSS
+===========================*/
+#skill {
+	background: var(--bs-dark);
+	padding: 50px 0 100px;
+}
+#skill .section-title {
+	margin-top: 130px;
+}
+#skill .section-title h2{
+	color:#fff;
+}
+#skill .skill-main{
+	margin-top:50px;
+}
+#skill .skill-head .skill-content {
+	margin-top: 50px;
+}
+#skill .skill-head .skill-content h3{
+	color:#fff;
+	font-weight:700;
+	font-size:28px;
+}
+#skill .skill-head .skill-content p{
+	color:#fff;
+	font-weight:300;
+	margin-top:20px;
+}
+#skill .skill-head .skill-content .bolt{
+	font-weight:600;
+}
+#skill .skill-title h4 {
+	font-size: 16px;
+	margin-bottom: 15px;
+	text-transform: capitalize;
+	font-weight: 600;
+	color:#fff;
+}
+#skill .single-skill{
+	margin-bottom:30px;
+}
+#skill .single-skill:last-child{
+	margin-bottom:0px;
+}
+#skill .progress {
+	overflow: visible;
+	border-radius: 0px;
+	box-shadow: none;
+	background: #eee;
+	height: 30px;
+	margin: 0;
+}
+#skill .progress-bar {
+	width: 0%;
+}
+#skill .progress .progress-bar span {
+	position: relative;
+	font-weight: 500;
+	font-size: 14px;
+	color:var(--bs-dark);
+}
+#skill .button{
+	margin-top:20px;
+}
+#skill .button .btn:hover{
+	background:#333;
+	color:#fff;
+}
+/*=========================
+	End Skills CSS
+===========================*/
+
+/*=========================
+	Story CSS
+===========================*/
+#story {
+	padding: 50px 0px;
+	background: #f3f4f5;
+}
+#story .single-story {
+	position:relative;
+	margin-top:55px;
+}
+#story .single-story .inner-content{
+	margin-left:125px;
+	position:relative;
+}
+#story .story-content{
+	position:relative;
+}
+#story .story-content::before {
+	position: absolute;
+	content: "";
+	left: 90px;
+	top: 0;
+	height: 100%;
+	width: 1px;
+	background: var(--bs-cyan);
+}
+#story .single-story span {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #333;
+	color: #fff;
+	border-radius: 3px;
+	height: 35px;
+	width: 60px;
+	text-align: center;
+	line-height: 35px;
+}
+#story .single-story span::before {
+	position: absolute;
+	content: "";
+	left: 81px;
+	top: 9px;
+	height: 18px;
+	width: 18px;
+	border-radius: 100%;
+}
+#story .single-story span::after {
+	position: absolute;
+	content: "";
+	border: 10px solid #333;
+	left: 58px;
+	top: 7px;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	
+}
+#story .single-story h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color:#000;
+	padding-bottom: 3px;
+}
+#story .single-story p{
+	color:#000c;
+	font-size:15px;
+	font-weight:300;
+}
+#story .single-story p:before {
+	position: absolute;
+    content: "";
+    left: -40px;
+    top: 13px;
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    border-radius: 100%;
+}
+#story .single-story .p2 {
+	margin-top: 15px;
+}
+/*=========================
+	End Story CSS
+===========================*/
+
+/*=========================
+	Latest Works CSS
+===========================*/
+#latest-works .section-title h2 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+#latest-works .section-title{
+	margin:0;
+	padding:0;
+}
+#latest-works .works-menu {
+	padding-top: 10px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+#latest-works .works-menu ul li {
+	font-size: 15px;
+	color: #333;
+	display:inline-block;
+	margin-right: 10px;
+	position: relative;
+	padding: 5px 10px;
+	margin-top: 22px;
+	position:relative;
+	cursor:pointer;
+	transition:all 0.2s ease;
+}
+#latest-works .works-menu ul li:hover,
+#latest-works .works-menu ul li.active{
+	color:#fff;
+	background:var(--bs-cyan);
+}
+#latest-works .works-menu ul li i{
+	margin-right:5px;
+	font-size:14px;
+}
+#latest-works .works-menu ul li::before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0px;
+	height: 1px;
+	width: 100%;
+	background: var(--bs-cyan);
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.4s ease;
+}
+#latest-works .works-menu ul li.active:before{
+	top: -4px;
+	opacity:1;
+	visibility:visible;
+}
+#latest-works .works-menu ul li:after{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: 0px;
+	height: 1px;
+	width: 100%;
+	background: var(--bs-cyan);
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.4s ease;
+}
+#latest-works .works-menu ul li.active:after{
+	opacity:1;
+	visibility:visible;
+	bottom: -4px;
+}
+#latest-works .works-menu ul li:last-child{
+	margin:0;
+}
+/* single-work */
+#latest-works .single-work{
+	position:relative;
+	overflow:hidden;
+}
+#latest-works .single-work:before{
+	background: var(--bs-cyan);
+    top:0px;
+	left:0;
+    content: "";
+    height: 100%;
+	width:100%;
+    position: absolute;
+    transition: all 0.4s ease;
+	opacity:0;
+	visibility:hidden;
+}
+#latest-works .single-work:hover:before{
+	opacity:0.9;
+	visibility:visible;
+}
+#latest-works .single-work img{
+	width:100%;
+}
+#latest-works .single-work .works-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	text-align: center;
+}
+#latest-works .single-work:hover .works-hover{
+	opacity: 1;
+	visibility: visible;
+}
+#latest-works .single-work .works-hover a{
+	display:inline-block;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	color:#fff;
+	font-size:16px;
+}
+#latest-works .single-work .works-hover .more{
+	margin-top:20px;
+}
+#latest-works .single-work .works-hover .more a {
+	color: #fff;
+	font-size: 16px;
+	border: 2px solid #fff;
+	height: 40px;
+	width: 140px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:500;
+}
+#latest-works .single-work .works-hover .more a:hover{
+	color:#000;
+	border-color:#000;
+}
+#latest-works .single-work .works-hover h4 {
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#latest-works .single-work .works-hover h4:hover{
+	color:#444;
+}
+#latest-works .single-work .works-hover h4:before{
+	position: absolute;
+    content: "";
+    left: -20px;
+    top: 8px;
+    height: 1px;
+    width: 10px;
+    background: #fff;
+}
+#latest-works .single-work .works-hover .link:before{
+	position: absolute;
+    content: "";
+    left: 50%;
+    top: -40px;
+    height: 40px;
+    width: 2px;
+    background: #fff;
+    margin-top: -20px;
+    margin-left: -1px;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	opacity:0;
+	visibility:hidden;
+}
+#latest-works .single-work:hover .works-hover .link:before{
+	top: 50%;
+	opacity:1;
+	visibility:visible;
+}
+#latest-works .single-work .works-hover .link:after{
+	position: absolute;
+    content: "";
+    left: -40px;
+    top: 50%;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+    margin-top: -1px;
+    margin-left: -20px;
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+	opacity:0;
+	visibility:hidden;
+}
+#latest-works .single-work:hover .works-hover .link:after{
+	left: 50%;
+	opacity:1;
+	visibility:visible;
+}
+#latest-works .single-work .works-hover h4:after{
+	position: absolute;
+    content: "";
+    right: -20px;
+    top: 8px;
+    height: 1px;
+    width: 10px;
+    background: #fff;
+}
+#latest-works .isotop-active .col-md-4{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+/*=========================
+	End Latest Works CSS
+===========================*/
+
+/*===========================
+	Contact CSS
+=============================*/
+#contact {
+	background: #f3f4f5;
+}
+#contact .form-body {
+	padding-right: 2rem;
+}
+#contact .form-head {
+	padding: 50px;
+	box-shadow: 4px 4px 10px #0003;
+	background: #fff;
+}
+#contact .form .form-group{
+	margin-bottom:25px;
+}
+#contact .form .form-group:last-child{
+	margin-bottom:0px;
+}
+#contact .form input{
+	width: 100%;
+    height: 46px;
+    padding-left: 15px;
+	border:1px solid #ccc;
+	text-transform:capitalize;
+}
+#contact .form input:hover,#contact .form input:focus{
+	border-color:var(--bs-cyan);
+}
+#contact .form textarea{
+	width: 100%;
+	height:200px;
+    padding: 15px;
+	border:1px solid #ccc;
+	text-transform:capitalize;
+	/*resize:none;*/
+}
+#contact .form textarea:hover,
+#contact .form textarea:focus{
+	border-color:var(--bs-cyan);
+}
+#contact .contact-info {
+	margin-top: 26px;
+}
+#contact .contact-info h4{
+	color:var(--bs-cyan);
+	font-size:25px;
+	margin-bottom:20px;
+	text-transform:capitalize;
+}
+#contact .contact-info p {
+	color: #777;
+	display: block;
+	margin-bottom: 20px;
+}
+#contact .contact-info span{
+	display:block;
+	color:#777;
+	margin-top:10px;
+}
+#contact .contact-info span i {
+	color: var(--bs-cyan);
+	font-size: 20px;
+	min-width: 32px;
+}
+#contact .contact-info span a:hover{
+	color:var(--bs-cyan);
+}
+#contact .form .btn {
+	background: var(--bs-cyan);
+	color: #fff;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	border-radius: 0px;
+	border-radius: 7px 0px 7px 0px;
+}
+#contact .form .btn i{
+	margin-left:10px;
+}
+#contact .form .btn:hover{
+	background:#555;
+	color:#fff;
+	border-radius: 0px 7px 0px 7px;
+}
+/*===========================
+	End Contact CSS
+=============================*/
+
+/*===========================
+	Clients CSS
+============================*/
+.clients {
+	position: relative;
+	padding: 30px 0;
+}
+.clients img {
+	padding: 40px;
+	filter:grayscale(1);
+	-webkit-transition:all 0.4s ease;
+	-moz-transition:all 0.4s ease;
+	transition:all 0.4s ease;
+}
+.clients img:hover{
+	filter:grayscale(0);
+	cursor:pointer;
+}
+.clients .owl-nav {
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	bottom: -15px;
+}
+#clients .owl-nav button {
+	background: transparent;
+	width: 30px;
+	height: 30px;
+	line-height:30px;
+	line-height: 0;
+	font-size: 20px;
+	color: #bfbfbf;
+	margin-right: 10px;
+	border:1px solid #e5e5e5;
+}
+#clients .owl-nav button:hover{
+	color:var(--bs-cyan);
+}
+/*===========================
+	End Clients CSS
+============================*/
+
+/*===========================
+	Footer CSS
+============================*/
+#footer{
+	padding:0;
+}
+#footer .footer-top{
+	text-align:center;
+	padding:90px 0;
+	background:#232328;
+}
+#footer .logo{
+	margin-bottom:60px;
+}
+#footer .social li{
+	display:inline-block;
+	margin-right:10px;
+}
+#footer .social li:last-child{
+margin:0;
+}
+#footer .social li a{
+	width:42px;
+	height:42px;
+	border-radius:0px;
+	background:#232328;
+	border:1px solid var(--bs-cyan);
+	line-height:42px;
+	text-align:center;
+	display:block;
+	color:var(--bs-cyan);
+}
+#footer .social li a:hover{
+	box-shadow:0px 0px 5px var(--bs-cyan) inset;
+	color:#fff;
+}
+#footer .social li span{
+	font-size:18px;
+}
+#footer .copyright{
+	background:#1d1d21;
+	text-align:center;
+	padding:25px 0;
+}
+#footer .copyright p{
+	color:#666666;
+}
+/*===========================
+	End Footer CSS
+============================*/
+/*===========================
+	My CSS Viewm more        
+============================*/
+.cv{
+font-weight: 500;
+font-size: 15px;
+height: 40px;
+color: #fff;
+background:var(--bs-cyan);
+text-transform:uppercase;
+display: inline-block;
+line-height: 40px;
+padding: 0 30px 0 30px;
+z-index:99;
+}
+.cv a {
+	font-weight: 500;
+	font-size: 15px;
+	height: 40px;
+	color: #fff;
+	background:var(--bs-cyan);
+	text-transform:uppercase;
+	display: inline-block;
+	line-height: 40px;
+}
+.cv a:hover{
+	color:#333;
+}
+
+/*===========================
+	End My CSS Viewm more
+============================*/
+
+.col-md-8 li h4 a{
+font-family: 'Fira Sans', sans-serif;
+}

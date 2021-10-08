@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="icon" href="{% static 'app\content\img\icon.png' %}">
+    <title>{{ title }} - My Django Application</title>
+    <link href="https:\\fonts.googleapis.com\css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'app\content\vendor\bootstrap5\css\bootstrap-reboot.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app\content\vendor\bootstrap5\css\bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app\content\style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'app\content\vendor\other\css\responsive.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app\content\vendor\other\css\font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app\content\vendor\other\css\magnific-popup.css' %}"/>
+    <link rel="stylesheet" href="{% static 'app\content\my_animation.css' %}"/>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="10">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#slider"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#slider">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">My Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="#story">Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="#latest-works">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="body-content">
+        {% block content %}{% endblock %}
+        <hr\>
+        <footer id="footer">
+        <div class="footer-top">
+            <div class="conteiner-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2020 Created by Mihail Surgutov</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </main>
+    
+    <script src="{% static 'app\content\vendor\bootstrap5\js\bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\jquery-3.6.0.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\modernizr-2.6.2.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\respond.min.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\jquery-appear.js' %}"></script>
+    <script src="{% static 'app\content\animation_logic.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\jquery.progress-bar.js' %}"></script>
+    <script src="{% static 'app\content\vendor\other\js\bs5.scrollSpy.js' %}"></script>
+
+</body>
+</html>
