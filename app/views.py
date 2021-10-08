@@ -42,3 +42,29 @@ def portfolio(request):
             'year':datetime.now().year,
         }
     )
+
+def pf_box(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/pf_box.html',
+        {
+            'title':'pf_box',
+            'works': [
+                {
+                    'title': 'site',
+                    'text': 'text'
+                },
+                {
+                    'title': 'Python parser',
+                    'text': 'text'
+                },
+                {
+                    'title': 'more',
+                    'text': 'text'
+                },
+            ],
+            'year':datetime.now().year,
+        }
+    )
