@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="">
+{% extends "app/layout.html" %}
+{% block content %}
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -19,20 +19,24 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="section-content">
-							<p>Первый собственный сайт!</p>
+							<p>Первый собственный сайт созданный на фреймворке Django с использованием Bootstrap 5.</p>
+                            <p>Данный сайт включает в себя библиотеки Responsive, Normalize, полный пакет Bootstrap 5 и собственные js скрипты.</p>
+                            <p>Структура сайта следущая: </p>
+                            <p>На сайте реализован функционал:</p>
+                            <ul class='list-group'>
+                                <li class='list-group-item list-group-item-primary'>Административная панель с возможностью добавлять проекты в портфолио</li>
+                                <li class='list-group-item list-group-item-primary'>Отправка письма на почту через сайт</li>
+                                <li class='list-group-item list-group-item-primary'>Звонок на телефон через сайт</li>  
+                            </ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-        <section id="latest-works" class="latest-works section">
-			<div class="container-fluid">
-				<div class="row">
+            <div class="row">
                 {% for work in works%}
 
                 {% endfor %}
-				</div>
 			</div>
 		</section>
 	</body>
-</html>
+{% endblock %}
