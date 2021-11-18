@@ -10,38 +10,42 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="section-title">
-					<h2>My <span>Portfolio</span></h2>
+				<div class="section-title _anim_items innact_anim">
+					<h2 class="fadeInLeft">My <span>Portfolio</span></h2>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 				<!-- Project Nav -->
-				<div class="works-menu wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+				<div id="works-menu" class="works-menu _anim_items innact_anim">
 					<ul>
-						<li class="active" data-filter="*"><i class="fa fa-tasks"></i>All Works</li>
-						<li data-filter=".print"><i class="fa fa-laptop"></i>WEB DEVELOPMENT</li>
-						<li data-filter=".identity"><i class="fa fa-mobile"></i>App Development</li>
+						<li class=" fadeInLeft menu_btn active" data-filter="*"><i class="fa fa-tasks"></i>All Works</li>
+						<li class="fadeInLeft menu_btn" data-filter=".print"><i class="fa fa-laptop"></i>WEB DEVELOPMENT</li>
+						<li class="fadeInLeft menu_btn" data-filter=".identity"><i class="fa fa-mobile"></i>App Development</li>
 					</ul>
 				</div>
 				<!--/ End Project Nav -->
 			</div>
 		</div>
-		<div class="row">
+        {% for Pf_projs in Pf_projs %}
+            <div class="row">
 			<div class="col-md-5">
 				<div class = "portfolio_img_space">
-					{% load static %}<img src="{% static 'app\content\img\my site.png' %}" alt="Изображение работы 1">
+					{% load static %}<img src="{% static 'app\content\img\my site.png' %}" alt="">
                 </div>
 			</div>
 			<div class="col-md-7">
-				<h4><a href={% url 'pf_box' %}><span>Собственный сайт портфолио</span></a></h4>
+				<h4><a href={% url 'pf_project_detail' id=Pf_projs.id %}><span>{{Pf_projs.title}}</span></a></h4>
 				<hr/>
-				<p>Первый собственный сайт.</p>
+				<p>{{Pf_projs.preview_text|linebreaksbr}}</p>
 			</div>
 		</div>
-        
+        {% endfor %}
     </div>
 </section>
 <!-- End Latest Works -->
+
+<script src="{% static 'app\content\Pf_btn_toggler.js' %}"></script>
+
 {% endblock %}
