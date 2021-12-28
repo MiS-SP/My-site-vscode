@@ -5,7 +5,7 @@ Definition of views.
 from django.core.mail import send_mail, BadHeaderError
 from datetime import datetime
 from django.shortcuts import render, redirect
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from .forms import ContactForm
 from My_site.settings import DEFAULT_FROM_EMAIL
 
@@ -86,7 +86,7 @@ def contact_view(request):
             message = form.cleaned_data['message']
             try:
                 send_mail(f'{subject} от {from_email}', message,
-                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
+                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)  #TODO fix RECIPIENTS_EMAIL
             except BadHeaderError:
                 return HttpResponse('Ошибка в теме письма.')
             return redirect('success')
