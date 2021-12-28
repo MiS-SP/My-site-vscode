@@ -28,4 +28,8 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
+
+    #Email sends views
+    path('contact/', contact_view, name='contact')
+    path('success/', views.success_view, name='success'),
 ]

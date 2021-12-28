@@ -9,3 +9,4 @@ class pf_projs(models.Model):
     author = models.ForeignKey('auth.User',on_delete=models.CASCADE)
     body = models.TextField(null=True)
     date_creation = models.DateField(auto_now_add=True)
+

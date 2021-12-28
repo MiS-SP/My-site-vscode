@@ -2,9 +2,13 @@
 Definition of views.
 """
 
+from django.core.mail import send_mail, BadHeaderError
 from datetime import datetime
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpRequest
+from .forms import ContactForm
+from My_site.settings import DEFAULT_FROM_EMAIL
+
 
 def home(request):
     """Renders the home page."""
@@ -68,3 +72,27 @@ def pf_box(request):
             'year':datetime.now().year,
         }
     )
+
+def contact_view(request):
+    # если метод GET, вернем форму
+    if request.method == 'GET':
+        form = ContactForm()
+    elif request.method == 'POST':
+        # если метод POST, проверим форму и отправим письмо
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(f'{subject} от {from_email}', message,
+                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)
+            except BadHeaderError:
+                return HttpResponse('Ошибка в теме письма.')
+            return redirect('success')
+    else:
+        return HttpResponse('Неверный запрос.')
+    return render(request, "email.html", {'form': form})
+
+def success_view(request):
+    return HttpResponse('Приняли! Спасибо за вашу заявку.')
