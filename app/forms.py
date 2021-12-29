@@ -18,7 +18,7 @@ class BootstrapAuthenticationForm(AuthenticationForm):
                                    'class': 'form-control',
                                    'placeholder':'Password'}))
 
-class ContactForm(forms.form):
+class ContactForm(forms.Form):
     from_email = forms.EmailField(label='Email', required=True)
     subject = forms.CharField(label='Subject', required=True)
     message = forms.CharField(label='Message', widget= forms.Textarea, required=True)

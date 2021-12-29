@@ -64,7 +64,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,12 +118,13 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 # Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # TODO fix proxy issue 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'MiSStartP@gmail.com'
-EMAIL_HOST_PASSWORD = 'new5lifePing'
+EMAIL_HOST_PASSWORD = 'mmuytuubcrnjjlne'
 EMAIL_USE_TLS = True
+RECIPIENTS_EMAIL = ['MiSStartP@gmail.com'] 
 DEFAULT_FROM_EMAIL = 'MiSStartP@gmail.com'
 FROM_EMAIL = ''
 EMAIL_ADMIN = 'MiSStartP@gmail.com'
