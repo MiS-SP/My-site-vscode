@@ -92,7 +92,7 @@ def contact_view(request):
             return redirect('success')
     else:
         return HttpResponse('Неверный запрос.')
-    return render(request, "email.html", {'form': form})
+    return render(request, "app/email.html", {'form': form})
 
 def success_view(request):
     return HttpResponse('Приняли! Спасибо за вашу заявку.')

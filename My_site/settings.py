@@ -118,7 +118,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 # Email settings
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' # TODO fix proxy issue 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # TODO fix proxy issue 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'MiSStartP@gmail.com'
