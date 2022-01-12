@@ -11,7 +11,6 @@ from app import forms, views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    #path('contact/', views.contact, name='contact'),
     path('portfolio/', views.portfolio, name='portfolio'),
     path('pf_box/', views.pf_box, name='pf_box'),
     path('login/',
@@ -28,8 +27,4 @@ urlpatterns = [
          name='login'),
     path('logout/', LogoutView.as_view(next_page='/'), name='logout'),
     path('admin/', admin.site.urls),
-
-    #Email sends views
-    path('contact/', views.contact_view, name='contact'),
-    path('success/', views.success_view, name='success'),
 ]

@@ -20,7 +20,7 @@
 				<!-- Project Nav -->
 				<div id="works-menu" class="works-menu _anim_items innact_anim">
 					<ul>
-						<li class=" fadeInLeft menu_btn active" data-filter="*"><i class="fa fa-tasks"></i>All Works</li>
+						<li class=" fadeInLeft menu_btn" data-filter="*"><i class="fa fa-tasks"></i>All Works</li>
 						<li class="fadeInLeft menu_btn" data-filter=".print"><i class="fa fa-laptop"></i>WEB DEVELOPMENT</li>
 						<li class="fadeInLeft menu_btn" data-filter=".identity"><i class="fa fa-mobile"></i>App Development</li>
 					</ul>
@@ -28,7 +28,7 @@
 				<!--/ End Project Nav -->
 			</div>
 		</div>
-        {% for Pf_projs in Pf_projs %}
+        {% for Pf_proj in Pf_projs %}
             <div class="row">
 			<div class="col-md-5">
 				<div class = "portfolio_img_space">
@@ -36,9 +36,9 @@
                 </div>
 			</div>
 			<div class="col-md-7">
-				<h4><a href={% url 'pf_project_detail' id=Pf_projs.id %}><span>{{Pf_projs.title}}</span></a></h4>
+				<h4><a href={% url 'pf_box' id=Pf_projs.id %}><span>{{Pf_proj.title}}</span></a></h4>
 				<hr/>
-				<p>{{Pf_projs.preview_text|linebreaksbr}}</p>
+				<p>{{Pf_proj.preview_text|linebreaksbr}}</p>
 			</div>
 		</div>
         {% endfor %}

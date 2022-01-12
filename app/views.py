@@ -4,6 +4,7 @@ Definition of views.
 
 from django.core.mail import send_mail, BadHeaderError
 from datetime import datetime
+from django.forms.widgets import Textarea
 from django.shortcuts import render, redirect
 from django.http import HttpRequest, HttpResponse, HttpResponseRedirect
 from .forms import ContactForm
@@ -13,24 +14,16 @@ from My_site.settings import DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
+        send_mail (name, message, email, ['MiSStartp@gmail.com'], fail_silently=False,)
     return render(
         request,
         'app/index.html',
         {
             'title':'Home Page',
-            'year':datetime.now().year,
-        }
-    )
-
-def contact(request):
-    """Renders the contact page."""
-    assert isinstance(request, HttpRequest)
-    return render(
-        request,
-        'app/contact.html',
-        {
-            'title':'Contact',
-            'message':'Your contact page.',
             'year':datetime.now().year,
         }
     )
@@ -72,27 +65,3 @@ def pf_box(request):
             'year':datetime.now().year,
         }
     )
-
-def contact_view(request):
-    # если метод GET, вернем форму
-    if request.method == 'GET':
-        form = ContactForm()
-    elif request.method == 'POST':
-        # если метод POST, проверим форму и отправим письмо
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(f'{subject} от {from_email}', message,
-                          DEFAULT_FROM_EMAIL, RECIPIENTS_EMAIL)  
-            except BadHeaderError:
-                return HttpResponse('Ошибка в теме письма.')
-            return redirect('success')
-    else:
-        return HttpResponse('Неверный запрос.')
-    return render(request, "app/email.html", {'form': form})
-
-def success_view(request):
-    return HttpResponse('Приняли! Спасибо за вашу заявку.')
